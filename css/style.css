@@ -1,0 +1,218 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#image {
+
+    z-index: -1;
+    position: absolute;
+}
+#player_mouse_target{
+    position:absolute;
+    width:100%;
+    height:4em;
+    bottom:0;
+    background:transparent;
+}
+#player{
+    position:absolute;
+    width:100%;
+    height:80%;
+    bottom:0;
+    left:0;
+    background:white;
+}
+menu {
+    /*margin: 2em auto;*/
+    position: relative;
+    left:0;
+    bottom:0;
+}
+menu button {
+    position: relative;
+    display: inline-block;
+    padding: .3em;
+    background: transparent;
+    border-style: none;
+    border-radius: 0em;
+    width: 3em;
+    height: 3em;
+    margin-right: 2px;
+    cursor: pointer;
+    bottom: .5em;
+}
+menu button:before,
+menu button:after {
+    position: absolute;
+    content: " ";
+}
+menu button:active {
+    bottom: .3em;
+}
+menu .play:before {
+    z-index: 2;
+    top: 0.55em;
+    left: 0.8999999999999999em;
+    width: 0;
+    height: 0;
+    border: 0.75em solid transparent;
+    border-left-color: rgba(100, 100, 100, 0.8);
+    border-left-width: 1.125em;
+}
+menu .play:hover:before {
+    border-left-color: rgba(0, 0, 0, 0.8);
+}
+menu .stop:before {
+    top: 0.7000000000000001em;
+    left: 0.7000000000000001em;
+    width: 1.1749999999999998em;
+    height: 1.1749999999999998em;
+    background: rgba(100, 100, 100, 0.8);
+}
+menu .stop:hover:before {
+    background: rgba(0, 0, 0, 0.8);
+}
+menu .ff:before,
+menu .ff:after {
+    width: 0;
+    height: 0;
+    top: 0.65em;
+    border: 0.625em solid transparent;
+    border-left-color: rgba(100, 100, 100, 0.8);
+    border-left-width: 0.675em;
+}
+menu .ff:before {
+    left: 0.75em;
+}
+menu .ff:after {
+    left: 1.4149999999999998em;
+    content: " ";
+}
+menu .ff:hover:before,
+menu .ff:hover:after {
+    border-left-color: rgba(0, 0, 0, 0.8);
+}
+menu .rw:before,
+menu .rw:after {
+    width: 0;
+    height: 0;
+    top: 0.65em;
+    border: 0.625em solid transparent;
+    border-right-color: rgba(100, 100, 100, 0.8);
+    border-right-width: 0.675em;
+}
+menu .rw:before {
+    left: 0.55em;
+}
+menu .rw:after {
+    left: -0.125em;
+    content: " ";
+}
+menu .rw:hover:after,
+menu .rw:hover:before {
+    border-right-color: rgba(0, 0, 0, 0.8);
+}
+menu .pause:before,
+menu .pause:after {
+    height: 1.1749999999999998em;
+    width: 0.475em;
+    left: 0.725em;
+    top: 0.7000000000000001em;
+    display: block;
+    background-color: rgba(100, 100, 100, 0.8);
+}
+menu .pause:after {
+    left: 1.35em;
+}
+menu .pause:hover:before,
+menu .pause:hover:after {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#download_frame {
+	display:none;
+	position:absolute;
+	left:29%;
+	bottom:31%;
+	width:38%;
+	height:40%;
+    text-align:center;
+    padding:15px;
+    border:1px;
+    background-color:#eee;
+	z-index: 2;
+}
+#album_art_mouse_target {
+    width:30%;
+    height:32%;
+    z-index:1;
+    margin-left:38%;
+    margin-top:10%;
+    position:absolute;
+    padding:0px;
+
+
+}
+#album_art{
+    text-align:center;
+    border-style:solid;
+    background-color:rgba(255,255,255,0);
+    border-color:rgba(255,255,255,0.3);
+    border-radius:12px;
+    width:100%;
+    height:100%;
+	padding:0px;
+}
+#main_play {
+	float:left;
+    position:relative;
+    width: 0;
+    height: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-left: 40px solid rgba(255,255,255,0.5);
+    border-bottom: 15px solid transparent;
+    top:40%;
+    margin-left:15%;
+    cursor:pointer;
+}
+#main_play:hover{
+    border-left: 80px solid rgba(255,255,255,0.9);
+}
+#main_play:active{
+    top:40.5%;
+}
+#download_button{
+	position:relative;
+	cursor:pointer;
+	top:40%;
+	left: 50%;
+	width:50%;
+	height:50%;
+}
+	
+#download_button:active{
+	top:40.5%;
+}	
+
+#triangle_down {
+	position:relative;
+	width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 95px solid rgba(255,255,255,0.5);
+	left:11%;
+	top:0%;
+}
+#rectangle{
+	position:relative;
+	left: 22%;
+	width: 33%;
+	height: 35%;
+	bottom: 0%;
+	background: rgba(255,255,255,0.5);
+
